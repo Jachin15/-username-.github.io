@@ -4,8 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Telephone Link Test</title>
+<script>
+function initiateCall() {
+    if (confirm("Do you want to call the Pricing Agent?")) {
+        window.location.href = 'tel:+15551234567';
+    }
+}
+</script>
 </head>
-<body style="text-align: center; padding-top: 50px;"> <!-- Centering the button and adding some padding for better visibility -->
-    <a href="tel:+15551234567" style="background-color: #0099ff; color: white; padding: 15px 30px; text-decoration: none; border-radius: 10px; display: inline-block; font-size: 18px;">Call Pricing Agent</a>
+<body style="text-align: center; padding-top: 50px;">
+    <button onclick="initiateCall()" style="background-color: #0099ff; color: white; padding: 15px 30px; border-radius: 10px; font-size: 18px; cursor: pointer;">Call Pricing Agent</button>
 </body>
 </html>
